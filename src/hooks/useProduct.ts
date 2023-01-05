@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from "react";
-import { InitialValues, onChangeArgs, Product } from "../interfaces/interfaces";
+import { useEffect, useRef, useState } from 'react';
+import { InitialValues, onChangeArgs, Product } from '../interfaces/interfaces';
 
 interface useProductArgs {
   product: Product;
@@ -17,8 +17,8 @@ export const useProduct = ({
   const [counter, setCounter] = useState<number>(initialValues?.count || value);
   const isMounted = useRef<boolean>(false);
 
-  console.log(initialValues?.count);
-  console.log({ value });
+  // console.log(initialValues?.count);
+  // console.log({ value });
 
   /* 
     - Dejar en ese orden los useEffect, ya que es el orden de compilacion
